@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — LittleWing</title>
+<meta name="description" content="How LittleWing collects, uses, and protects your information." />
+
+<!--
+  ════════════════════════════════════════════════════════════════
+  PRIVACY POLICY — STARTING TEMPLATE, NOT LEGAL ADVICE.
+  Have this reviewed by a lawyer before you rely on it, especially
+  the Children's Privacy section (parenting apps have COPPA exposure).
+
+  Replace every [BRACKETED] placeholder. Key ones:
+    • [Plasticity LLC]            → your legal entity name
+    • [EFFECTIVE DATE]            → e.g. June 28, 2026
+    • [privacy@yourdomain.com]    → contact email on your domain
+    • [Street, City, State ZIP]   → registered business address
+    • [AI PROVIDER]               → e.g. Anthropic / OpenAI (whoever powers Wingie)
+    • [ANALYTICS PROVIDER]        → e.g. your own Supabase analytics, or a vendor
+    • [STATE / COUNTRY]           → governing-law jurisdiction
+
+  IMPORTANT — make every statement below TRUE for your actual app.
+  If a clause describes something LittleWing does not do, delete it.
+  If LittleWing does something not listed here, add it.
+  ════════════════════════════════════════════════════════════════
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --paper:    #FBF7F1;
+    --paper-2:  #F4EDE3;
+    --ink:      #28304A;
+    --ink-soft: #5D6480;
+    --coral:    #ED7A52;
+    --coral-dk: #D8633C;
+    --amber:    #F2B33D;
+    --sky:      #8FB0C9;
+    --blush:    #FBE6DC;
+    --line:     #E8DDCE;
+    --radius:   18px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: "Inter", system-ui, sans-serif; line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { width: min(760px, 92vw); margin-inline: auto; }
+
+  h1, h2, h3 { font-family: "Bricolage Grotesque", "Inter", sans-serif; line-height: 1.15; letter-spacing: -0.02em; font-weight: 600; }
+  a { color: var(--coral-dk); }
+
+  /* nav */
+  header.nav { border-bottom: 1px solid var(--line); background: var(--paper); }
+  .nav-inner { width: min(1080px, 92vw); margin-inline: auto; display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+  .brand { display: flex; align-items: center; gap: 11px; font-family: "Bricolage Grotesque"; font-weight: 700; font-size: 1.2rem; letter-spacing: -0.02em; color: var(--ink); text-decoration: none; }
+  .brand svg { width: 28px; height: 28px; }
+  .back { font-size: 0.92rem; color: var(--ink-soft); text-decoration: none; font-weight: 500; }
+  .back:hover { color: var(--ink); }
+
+  /* header block */
+  .doc-head { padding: 54px 0 30px; border-bottom: 1px solid var(--line); }
+  .doc-head h1 { font-size: clamp(2rem, 5vw, 2.9rem); }
+  .doc-head .meta { color: var(--ink-soft); margin-top: 14px; font-size: 0.96rem; }
+
+  /* toc */
+  .toc { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 26px; margin: 32px 0; }
+  .toc h2 { font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--coral-dk); margin-bottom: 12px; }
+  .toc ol { list-style: none; counter-reset: toc; columns: 2; column-gap: 32px; }
+  @media (max-width: 560px) { .toc ol { columns: 1; } }
+  .toc li { counter-increment: toc; margin: 5px 0; font-size: 0.94rem; }
+  .toc li::before { content: counter(toc) ". "; color: var(--coral); font-weight: 600; }
+  .toc a { color: var(--ink); text-decoration: none; }
+  .toc a:hover { color: var(--coral-dk); }
+
+  /* body content */
+  main { padding: 8px 0 60px; }
+  section.clause { padding: 26px 0; border-bottom: 1px solid var(--line); }
+  section.clause h2 { font-size: 1.4rem; margin-bottom: 14px; }
+  section.clause h2 .num { color: var(--coral); margin-right: 10px; }
+  section.clause h3 { font-size: 1.05rem; margin: 20px 0 6px; color: var(--ink); }
+  section.clause p { color: var(--ink-soft); margin: 10px 0; }
+  section.clause ul { color: var(--ink-soft); margin: 10px 0 10px 22px; }
+  section.clause li { margin: 6px 0; }
+  section.clause strong { color: var(--ink); font-weight: 600; }
+
+  .callout { background: var(--blush); border: 1px solid var(--line); border-left: 4px solid var(--coral); border-radius: 10px; padding: 16px 18px; margin: 16px 0; }
+  .callout p { color: var(--ink); margin: 0; font-size: 0.95rem; }
+
+  footer.foot { padding: 30px 0 50px; }
+  footer.foot p { color: var(--ink-soft); font-size: 0.88rem; }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <path d="M20 32 C14 28 9 22 8 13 C14 16 18 20 20 26 Z" fill="#ED7A52"/>
+        <path d="M20 32 C16 26 14 19 15 11 C19 16 21 21 21 27 Z" fill="#F2B33D"/>
+        <path d="M20 32 C20 25 21 18 24 11 C25 18 24 24 22 28 Z" fill="#ED7A52"/>
+        <path d="M20 32 C23 26 27 21 32 16 C31 23 27 28 22 31 Z" fill="#8FB0C9"/>
+      </svg>
+      LittleWing
+    </a>
+    <a href="index.html" class="back">← Back to home</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="doc-head">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: <strong>[EFFECTIVE DATE]</strong> &nbsp;·&nbsp; Last updated: <strong>[EFFECTIVE DATE]</strong></p>
+  </div>
+
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#intro">Who we are</a></li>
+      <li><a href="#collect">Information we collect</a></li>
+      <li><a href="#use">How we use information</a></li>
+      <li><a href="#wingie">Wingie &amp; AI features</a></li>
+      <li><a href="#share">How we share information</a></li>
+      <li><a href="#affiliate">Affiliate links &amp; products</a></li>
+      <li><a href="#retention">Data retention</a></li>
+      <li><a href="#rights">Your rights &amp; choices</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#intl">International users</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <section class="clause" id="intro">
+      <h2><span class="num">1.</span>Who we are</h2>
+      <p>LittleWing ("LittleWing," "we," "us," or "our") is an iOS application operated by <strong>[Plasticity LLC]</strong>. LittleWing helps parents through the early years with Wingie, an AI companion, and a curated shelf of recommended products.</p>
+      <p>This Privacy Policy explains what information we collect when you use the LittleWing app and related services (the "Services"), how we use and share it, and the choices you have. By using LittleWing, you agree to the practices described here.</p>
+    </section>
+
+    <section class="clause" id="collect">
+      <h2><span class="num">2.</span>Information we collect</h2>
+
+      <h3>Information you provide to us</h3>
+      <ul>
+        <li><strong>Account information.</strong> When you create an account, we collect your email address and, if you use Sign in with Apple, the name and email (or Apple-relayed email) you choose to share. We do not receive your Apple password.</li>
+        <li><strong>Profile information.</strong> Details you choose to add, such as your child's first name, birth date or age, and developmental stage, used to personalize guidance and product recommendations.</li>
+        <li><strong>Conversations with Wingie.</strong> The questions, messages, and content you send to Wingie, our AI companion feature.</li>
+        <li><strong>Saved items.</strong> Products you add to your cart or wishlist.</li>
+        <li><strong>Communications.</strong> Information you provide when you contact us for support.</li>
+      </ul>
+
+      <h3>Information collected automatically</h3>
+      <ul>
+        <li><strong>Usage data.</strong> How you interact with the app — screens viewed, features used, products tapped, and affiliate links clicked.</li>
+        <li><strong>Device information.</strong> Device type, operating system version, app version, and general diagnostic data.</li>
+        <li><strong>Identifiers.</strong> An account or device identifier used to associate activity with your account.</li>
+      </ul>
+
+      <div class="callout">
+        <p><strong>Verify this list.</strong> Edit it so it matches exactly what LittleWing collects in practice — Apple's App Privacy "nutrition label" on App Store Connect must line up with this policy. Remove anything you don't collect; add anything you do.</p>
+      </div>
+    </section>
+
+    <section class="clause" id="use">
+      <h2><span class="num">3.</span>How we use information</h2>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li>Provide, maintain, and improve the Services, including Wingie and product recommendations;</li>
+        <li>Personalize guidance and suggested products based on the stage and preferences you share;</li>
+        <li>Create and manage your account and authenticate you;</li>
+        <li>Respond to your questions and provide customer support;</li>
+        <li>Understand how the app is used so we can improve it;</li>
+        <li>Detect, prevent, and address technical issues, fraud, or abuse; and</li>
+        <li>Comply with legal obligations.</li>
+      </ul>
+      <p>We do <strong>not</strong> sell your personal information, and we do <strong>not</strong> use the content of your Wingie conversations to serve you third-party advertising.</p>
+    </section>
+
+    <section class="clause" id="wingie">
+      <h2><span class="num">4.</span>Wingie &amp; AI features</h2>
+      <p>Wingie is powered by a third-party AI provider, <strong>[AI PROVIDER]</strong>. When you send a message to Wingie, your message (and relevant context needed to answer it) is transmitted to that provider to generate a response, and then returned to you in the app.</p>
+      <p>We instruct our AI provider to process this content only to provide the feature. Depending on the provider, your inputs may be retained for a limited period for safety and abuse-prevention purposes, but are not used to train their models where we have selected enterprise or zero-retention terms that exclude such use.</p>
+      <div class="callout">
+        <p><strong>Make this accurate to your provider's terms.</strong> Confirm whether your AI provider uses inputs for training and what their retention period is, then state it plainly here. If you're on Anthropic's API, for example, commercial inputs aren't used for training by default — say what's actually true for your setup.</p>
+      </div>
+      <p><strong>Please don't rely on Wingie for emergencies or as a substitute for professional advice.</strong> Wingie offers general information and is not a doctor. For medical concerns, contact a qualified healthcare provider; in an emergency, call your local emergency number.</p>
+    </section>
+
+    <section class="clause" id="share">
+      <h2><span class="num">5.</span>How we share information</h2>
+      <p>We share information only as described below. We do not sell your personal information.</p>
+      <ul>
+        <li><strong>Service providers.</strong> We use trusted vendors to run LittleWing, including <strong>[AI PROVIDER]</strong> (Wingie), our backend and authentication provider (Supabase), and analytics tooling. They may process your information only to provide services to us and under obligations of confidentiality.</li>
+        <li><strong>Affiliate and merchant partners.</strong> When you tap a product link, you are taken to a third-party retailer (such as Amazon). Your activity on that retailer's site is governed by their privacy policy, not ours. See Section 6.</li>
+        <li><strong>Legal and safety.</strong> We may disclose information if required by law, or to protect the rights, safety, and security of our users, the public, or LittleWing.</li>
+        <li><strong>Business transfers.</strong> If LittleWing is involved in a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction.</li>
+      </ul>
+    </section>
+
+    <section class="clause" id="affiliate">
+      <h2><span class="num">6.</span>Affiliate links &amp; products</h2>
+      <p>LittleWing participates in affiliate programs, including the <strong>Amazon Associates Program</strong>. This means we may earn a commission when you purchase products through links in the app, at no additional cost to you.</p>
+      <p>When you tap a product, we may record that interaction (for example, which product and when) to understand which recommendations are useful and to attribute qualifying purchases. The retailer you are sent to operates independently and collects and uses your information under its own privacy policy. We encourage you to review the privacy practices of any retailer before making a purchase.</p>
+    </section>
+
+    <section class="clause" id="retention">
+      <h2><span class="num">7.</span>Data retention</h2>
+      <p>We keep your information for as long as your account is active or as needed to provide the Services. We retain and use information as necessary to comply with legal obligations, resolve disputes, and enforce our agreements. When you delete your account, we delete or de-identify your personal information within a reasonable period, except where we are required to retain it.</p>
+    </section>
+
+    <section class="clause" id="rights">
+      <h2><span class="num">8.</span>Your rights &amp; choices</h2>
+      <p>Depending on where you live, you may have rights to:</p>
+      <ul>
+        <li>Access the personal information we hold about you;</li>
+        <li>Correct inaccurate information;</li>
+        <li>Delete your account and associated personal information;</li>
+        <li>Object to or restrict certain processing; and</li>
+        <li>Request a copy of your information in a portable format.</li>
+      </ul>
+      <p>You can delete your account from within the app, or contact us at <a href="mailto:[privacy@yourdomain.com]">[privacy@yourdomain.com]</a> to exercise any of these rights. We will respond consistent with applicable law.</p>
+      <p><strong>California residents.</strong> If you are a California resident, the CCPA/CPRA gives you rights to know, delete, and correct your personal information, and to not be discriminated against for exercising those rights. We do not sell or share personal information as those terms are defined under California law.</p>
+    </section>
+
+    <section class="clause" id="children">
+      <h2><span class="num">9.</span>Children's privacy</h2>
+      <p>LittleWing is intended for use by <strong>parents and caregivers who are adults (18 or older)</strong>. It is not directed to children, and we do not knowingly allow children to create accounts or use the Services directly.</p>
+      <p>LittleWing is designed for parents to use, and any information about a child is provided <strong>by the parent or caregiver</strong> (for example, a child's first name or age) to personalize guidance. We use that information only to provide the Services and do not knowingly collect personal information directly from children.</p>
+      <p>If you believe a child has provided us with personal information, please contact us at <a href="mailto:[privacy@yourdomain.com]">[privacy@yourdomain.com]</a> and we will take appropriate steps to delete it.</p>
+      <div class="callout">
+        <p><strong>This section needs legal review.</strong> Because LittleWing handles information about children (even when entered by a parent), U.S. COPPA, Apple's Kids/age rules, and laws like the UK Age-Appropriate Design Code may apply. Have a privacy lawyer confirm your approach and your App Store age rating before launch.</p>
+      </div>
+    </section>
+
+    <section class="clause" id="security">
+      <h2><span class="num">10.</span>Security</h2>
+      <p>We use reasonable administrative, technical, and physical safeguards designed to protect your information, including encryption in transit and access controls on our backend. No method of transmission or storage is completely secure, however, and we cannot guarantee absolute security.</p>
+    </section>
+
+    <section class="clause" id="intl">
+      <h2><span class="num">11.</span>International users</h2>
+      <p>We operate from the United States, and your information may be processed in the United States and other countries where we or our service providers operate. These countries may have data-protection laws different from those in your country. Where required, we take steps to ensure appropriate safeguards are in place for international transfers.</p>
+    </section>
+
+    <section class="clause" id="changes">
+      <h2><span class="num">12.</span>Changes to this policy</h2>
+      <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date above and, for material changes, provide a more prominent notice within the app. Your continued use of LittleWing after an update means you accept the revised policy.</p>
+    </section>
+
+    <section class="clause" id="contact">
+      <h2><span class="num">13.</span>Contact us</h2>
+      <p>If you have questions about this Privacy Policy or our handling of your information, contact us at:</p>
+      <p>
+        <strong>[Plasticity LLC]</strong><br>
+        [Street Address]<br>
+        [City, State ZIP]<br>
+        Email: <a href="mailto:[privacy@yourdomain.com]">[privacy@yourdomain.com]</a>
+      </p>
+      <p>This policy is governed by the laws of <strong>[STATE / COUNTRY]</strong>, without regard to its conflict-of-laws principles.</p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>© <span id="yr"></span> [Plasticity LLC]. LittleWing is a product of [Plasticity LLC]. As an Amazon Associate, LittleWing earns from qualifying purchases.</p>
+  </footer>
+</div>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

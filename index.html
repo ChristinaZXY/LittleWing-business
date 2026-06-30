@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" href="appicon.png" />
 <title>LittleWing — A gentle co-pilot for the early years</title>
 <meta name="description" content="LittleWing is an iOS parenting app with Wingie, an AI companion for new parents, plus a hand-picked shelf of baby gear worth buying." />
 
@@ -88,7 +89,7 @@
     padding: 16px 0;
   }
   .brand { display: flex; align-items: center; gap: 11px; font-family: "Bricolage Grotesque"; font-weight: 700; font-size: 1.25rem; letter-spacing: -0.02em; }
-  .brand svg { width: 30px; height: 30px; }
+  .brand svg, .brand img { width: 30px; height: 30px; border-radius: 23%; object-fit: cover; }
   .nav-links { display: flex; gap: 30px; align-items: center; }
   .nav-links a { text-decoration: none; font-size: 0.93rem; color: var(--ink-soft); font-weight: 500; transition: color .2s; }
   .nav-links a:hover { color: var(--ink); }
@@ -135,7 +136,7 @@
     border: 1px solid var(--line); border-radius: 28px;
     padding: 38px 34px; box-shadow: var(--shadow);
   }
-  .wing-card .big-wing { width: 120px; height: 120px; display: block; margin: 0 auto 18px; }
+  .wing-card .big-wing { width: 120px; height: 120px; display: block; margin: 0 auto 18px; border-radius: 23%; box-shadow: 0 10px 24px -12px rgba(40,48,74,.35); }
   .chat-bubble {
     background: #fff; border: 1px solid var(--line); border-radius: 16px 16px 16px 4px;
     padding: 12px 15px; font-size: 0.92rem; color: var(--ink); margin-top: 12px; box-shadow: 0 6px 16px -10px rgba(40,48,74,.25);
@@ -222,14 +223,7 @@
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
     <div class="brand">
-      <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
-        <g class="wing-mark">
-          <path class="feather" d="M20 32 C14 28 9 22 8 13 C14 16 18 20 20 26 Z" fill="#ED7A52"/>
-          <path class="feather" d="M20 32 C16 26 14 19 15 11 C19 16 21 21 21 27 Z" fill="#F2B33D"/>
-          <path class="feather" d="M20 32 C20 25 21 18 24 11 C25 18 24 24 22 28 Z" fill="#ED7A52"/>
-          <path class="feather" d="M20 32 C23 26 27 21 32 16 C31 23 27 28 22 31 Z" fill="#8FB0C9"/>
-        </g>
-      </svg>
+      <img src="appicon.png" alt="LittleWing app icon" width="30" height="30" />
       LittleWing
     </div>
     <nav class="nav-links">
@@ -261,14 +255,7 @@
 
     <div class="hero-art reveal in">
       <div class="wing-card">
-        <svg class="big-wing" viewBox="0 0 120 120" fill="none" aria-hidden="true">
-          <g>
-            <path class="feather" d="M60 100 C40 86 26 64 24 36 C44 46 56 60 60 80 Z" fill="#ED7A52"/>
-            <path class="feather" d="M60 100 C46 80 40 56 44 30 C58 46 64 64 63 82 Z" fill="#F2B33D"/>
-            <path class="feather" d="M60 100 C60 76 64 52 74 28 C78 52 74 72 67 86 Z" fill="#ED7A52"/>
-            <path class="feather" d="M60 100 C70 80 84 62 100 48 C96 72 82 90 66 96 Z" fill="#8FB0C9"/>
-          </g>
-        </svg>
+        <img class="big-wing" src="appicon.png" alt="LittleWing app icon" width="120" height="120" />
         <div class="chat-bubble me">She won't nap longer than 30 min — is that normal at 4 months?</div>
         <div class="chat-bubble wingie">
           <div class="chat-from">Wingie</div>
@@ -366,20 +353,15 @@
   <div class="wrap">
     <div class="foot-inner">
       <div class="brand">
-        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <path d="M20 32 C14 28 9 22 8 13 C14 16 18 20 20 26 Z" fill="#ED7A52"/>
-          <path d="M20 32 C16 26 14 19 15 11 C19 16 21 21 21 27 Z" fill="#F2B33D"/>
-          <path d="M20 32 C20 25 21 18 24 11 C25 18 24 24 22 28 Z" fill="#ED7A52"/>
-          <path d="M20 32 C23 26 27 21 32 16 C31 23 27 28 22 31 Z" fill="#8FB0C9"/>
-        </svg>
+        <img src="appicon.png" alt="LittleWing app icon" width="28" height="28" />
         LittleWing
       </div>
       <div class="foot-links">
         <a href="#wingie">Wingie</a>
         <a href="#features">Features</a>
         <a href="#about">About</a>
-        <a href="[Privacy Policy URL]">Privacy</a>
-        <a href="[Terms URL]">Terms</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
       </div>
     </div>
     <p class="copy">© <span id="yr"></span> [Your Legal Entity Name]. All rights reserved. As an Amazon Associate, LittleWing earns from qualifying purchases.</p>

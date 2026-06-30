@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" href="appicon.png" />
+<title>Terms of Service — LittleWing</title>
+<meta name="description" content="The terms that govern your use of the LittleWing app and services." />
+
+<!--
+  ════════════════════════════════════════════════════════════════
+  TERMS OF SERVICE — STARTING TEMPLATE, NOT LEGAL ADVICE.
+  Have this reviewed by a lawyer before you rely on it. Pay special
+  attention to the Medical Disclaimer, Limitation of Liability, and
+  Governing Law sections.
+
+  Replace every [BRACKETED] placeholder:
+    • [Plasticity LLC]            → your legal entity name
+    • [EFFECTIVE DATE]            → e.g. June 28, 2026
+    • [support@yourdomain.com]    → contact email on your domain
+    • [Street, City, State ZIP]   → registered business address
+    • [STATE]                     → governing-law state (e.g. New York)
+    • [County, State]             → venue for disputes
+  ════════════════════════════════════════════════════════════════
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --paper:    #FBF7F1;
+    --paper-2:  #F4EDE3;
+    --ink:      #28304A;
+    --ink-soft: #5D6480;
+    --coral:    #ED7A52;
+    --coral-dk: #D8633C;
+    --amber:    #F2B33D;
+    --sky:      #8FB0C9;
+    --blush:    #FBE6DC;
+    --line:     #E8DDCE;
+    --radius:   18px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: "Inter", system-ui, sans-serif; line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { width: min(760px, 92vw); margin-inline: auto; }
+
+  h1, h2, h3 { font-family: "Bricolage Grotesque", "Inter", sans-serif; line-height: 1.15; letter-spacing: -0.02em; font-weight: 600; }
+  a { color: var(--coral-dk); }
+
+  header.nav { border-bottom: 1px solid var(--line); background: var(--paper); }
+  .nav-inner { width: min(1080px, 92vw); margin-inline: auto; display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+  .brand { display: flex; align-items: center; gap: 11px; font-family: "Bricolage Grotesque"; font-weight: 700; font-size: 1.2rem; letter-spacing: -0.02em; color: var(--ink); text-decoration: none; }
+  .brand svg, .brand img { width: 28px; height: 28px; border-radius: 23%; object-fit: cover; }
+  .back { font-size: 0.92rem; color: var(--ink-soft); text-decoration: none; font-weight: 500; }
+  .back:hover { color: var(--ink); }
+
+  .doc-head { padding: 54px 0 30px; border-bottom: 1px solid var(--line); }
+  .doc-head h1 { font-size: clamp(2rem, 5vw, 2.9rem); }
+  .doc-head .meta { color: var(--ink-soft); margin-top: 14px; font-size: 0.96rem; }
+
+  .toc { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 26px; margin: 32px 0; }
+  .toc h2 { font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--coral-dk); margin-bottom: 12px; }
+  .toc ol { list-style: none; counter-reset: toc; columns: 2; column-gap: 32px; }
+  @media (max-width: 560px) { .toc ol { columns: 1; } }
+  .toc li { counter-increment: toc; margin: 5px 0; font-size: 0.94rem; }
+  .toc li::before { content: counter(toc) ". "; color: var(--coral); font-weight: 600; }
+  .toc a { color: var(--ink); text-decoration: none; }
+  .toc a:hover { color: var(--coral-dk); }
+
+  main { padding: 8px 0 60px; }
+  section.clause { padding: 26px 0; border-bottom: 1px solid var(--line); }
+  section.clause h2 { font-size: 1.4rem; margin-bottom: 14px; }
+  section.clause h2 .num { color: var(--coral); margin-right: 10px; }
+  section.clause h3 { font-size: 1.05rem; margin: 20px 0 6px; color: var(--ink); }
+  section.clause p { color: var(--ink-soft); margin: 10px 0; }
+  section.clause ul { color: var(--ink-soft); margin: 10px 0 10px 22px; }
+  section.clause li { margin: 6px 0; }
+  section.clause strong { color: var(--ink); font-weight: 600; }
+
+  .callout { background: var(--blush); border: 1px solid var(--line); border-left: 4px solid var(--coral); border-radius: 10px; padding: 16px 18px; margin: 16px 0; }
+  .callout p { color: var(--ink); margin: 0; font-size: 0.95rem; }
+
+  .legal-emph { text-transform: uppercase; font-size: 0.92rem; letter-spacing: 0.01em; }
+
+  footer.foot { padding: 30px 0 50px; }
+  footer.foot p { color: var(--ink-soft); font-size: 0.88rem; }
+  footer.foot a { color: var(--ink-soft); text-decoration: none; }
+  footer.foot a:hover { color: var(--ink); }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="appicon.png" alt="LittleWing app icon" width="28" height="28" />
+      LittleWing
+    </a>
+    <a href="index.html" class="back">← Back to home</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="doc-head">
+    <h1>Terms of Service</h1>
+    <p class="meta">Effective date: <strong>[EFFECTIVE DATE]</strong> &nbsp;·&nbsp; Last updated: <strong>[EFFECTIVE DATE]</strong></p>
+  </div>
+
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#accept">Acceptance of terms</a></li>
+      <li><a href="#eligibility">Eligibility</a></li>
+      <li><a href="#accounts">Your account</a></li>
+      <li><a href="#license">License to use LittleWing</a></li>
+      <li><a href="#wingie">Wingie &amp; AI content</a></li>
+      <li><a href="#medical">Not medical advice</a></li>
+      <li><a href="#affiliate">Products &amp; affiliate links</a></li>
+      <li><a href="#conduct">Acceptable use</a></li>
+      <li><a href="#ip">Intellectual property</a></li>
+      <li><a href="#thirdparty">Third-party services</a></li>
+      <li><a href="#termination">Termination</a></li>
+      <li><a href="#disclaimers">Disclaimers</a></li>
+      <li><a href="#liability">Limitation of liability</a></li>
+      <li><a href="#indemnity">Indemnification</a></li>
+      <li><a href="#changes">Changes to the terms</a></li>
+      <li><a href="#law">Governing law</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <section class="clause" id="accept">
+      <h2><span class="num">1.</span>Acceptance of terms</h2>
+      <p>These Terms of Service ("Terms") are a binding agreement between you and <strong>[Plasticity LLC]</strong> ("LittleWing," "we," "us," or "our") and govern your use of the LittleWing mobile application and related services (the "Services"). By downloading, accessing, or using LittleWing, you agree to these Terms and to our <a href="/privacy.html">Privacy Policy</a>. If you do not agree, please do not use the Services.</p>
+    </section>
+
+    <section class="clause" id="eligibility">
+      <h2><span class="num">2.</span>Eligibility</h2>
+      <p>You must be at least 18 years old and able to form a binding contract to use LittleWing. The Services are intended for parents and caregivers and are not directed to children. By using LittleWing, you represent that you meet these requirements.</p>
+    </section>
+
+    <section class="clause" id="accounts">
+      <h2><span class="num">3.</span>Your account</h2>
+      <p>To use certain features you must create an account. You agree to provide accurate information and to keep it current. You are responsible for safeguarding your account credentials and for all activity that occurs under your account. Notify us promptly at <a href="mailto:[support@yourdomain.com]">[support@yourdomain.com]</a> if you suspect unauthorized use.</p>
+    </section>
+
+    <section class="clause" id="license">
+      <h2><span class="num">4.</span>License to use LittleWing</h2>
+      <p>Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to download and use LittleWing on a device you own or control, for your personal, non-commercial use. You may not copy, modify, distribute, sell, reverse-engineer, or create derivative works from the Services except as permitted by law.</p>
+    </section>
+
+    <section class="clause" id="wingie">
+      <h2><span class="num">5.</span>Wingie &amp; AI-generated content</h2>
+      <p>Wingie is an AI companion feature that generates responses automatically. AI-generated content may be inaccurate, incomplete, or not suitable for your situation. You are responsible for evaluating any information Wingie provides before relying on it. We do not guarantee the accuracy, reliability, or fitness for any purpose of Wingie's responses.</p>
+      <p>You agree not to use Wingie to generate content that is unlawful, harmful, or that violates these Terms, and not to submit content you do not have the right to share.</p>
+    </section>
+
+    <section class="clause" id="medical">
+      <h2><span class="num">6.</span>Not medical or professional advice</h2>
+      <div class="callout">
+        <p><strong>Important.</strong> LittleWing and Wingie provide general information for educational purposes only and are <strong>not a substitute for professional medical, health, legal, or other advice.</strong> Nothing in the Services creates a doctor–patient or professional relationship.</p>
+      </div>
+      <p>Always seek the advice of a qualified healthcare provider with questions about your child's health or development. Never disregard or delay seeking professional advice because of something you read in LittleWing. <strong>In an emergency, call your local emergency number immediately.</strong></p>
+    </section>
+
+    <section class="clause" id="affiliate">
+      <h2><span class="num">7.</span>Products &amp; affiliate links</h2>
+      <p>LittleWing displays product recommendations and may include affiliate links, including through the <strong>Amazon Associates Program</strong>. We may earn a commission on qualifying purchases made through these links, at no additional cost to you.</p>
+      <p>Products are sold by third-party retailers, not by LittleWing. We do not manufacture, sell, warrant, or guarantee any product shown in the app, and we are not responsible for the products, prices, availability, fulfillment, or the practices of any retailer. Any purchase you make is a transaction solely between you and that retailer, governed by their terms.</p>
+    </section>
+
+    <section class="clause" id="conduct">
+      <h2><span class="num">8.</span>Acceptable use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use the Services for any unlawful purpose or in violation of these Terms;</li>
+        <li>Attempt to gain unauthorized access to the Services, other accounts, or our systems;</li>
+        <li>Interfere with or disrupt the Services or the servers and networks that support them;</li>
+        <li>Use any automated means to access or scrape the Services without our permission;</li>
+        <li>Upload malicious code or content that is unlawful, infringing, or harmful; or</li>
+        <li>Misrepresent your identity or affiliation.</li>
+      </ul>
+    </section>
+
+    <section class="clause" id="ip">
+      <h2><span class="num">9.</span>Intellectual property</h2>
+      <p>The Services, including the LittleWing name, logo, Wingie, and all related content, design, and software, are owned by [Plasticity LLC] or our licensors and are protected by intellectual property laws. These Terms do not grant you any right to use our trademarks or branding without our prior written consent.</p>
+      <p>If you submit feedback or suggestions, you grant us a non-exclusive, royalty-free, perpetual license to use them without obligation to you.</p>
+    </section>
+
+    <section class="clause" id="thirdparty">
+      <h2><span class="num">10.</span>Third-party services</h2>
+      <p>The Services rely on and link to third-party services, including Apple's App Store, our AI provider, our backend provider, and retailer websites. Your use of those services is governed by their own terms and privacy policies, and we are not responsible for them. If you downloaded LittleWing from the Apple App Store, you acknowledge that Apple is not responsible for the Services and is a third-party beneficiary of these Terms with the right to enforce them.</p>
+    </section>
+
+    <section class="clause" id="termination">
+      <h2><span class="num">11.</span>Termination</h2>
+      <p>You may stop using the Services and delete your account at any time. We may suspend or terminate your access to the Services at any time, with or without notice, if you violate these Terms or if we discontinue the Services. Provisions that by their nature should survive termination will survive, including ownership, disclaimers, limitations of liability, and governing law.</p>
+    </section>
+
+    <section class="clause" id="disclaimers">
+      <h2><span class="num">12.</span>Disclaimers</h2>
+      <p class="legal-emph">The Services are provided "as is" and "as available" without warranties of any kind, whether express or implied, including any implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the Services will be uninterrupted, secure, error-free, or that any content, including Wingie's responses, will be accurate or reliable.</p>
+    </section>
+
+    <section class="clause" id="liability">
+      <h2><span class="num">13.</span>Limitation of liability</h2>
+      <p class="legal-emph">To the fullest extent permitted by law, [Plasticity LLC] and its officers, employees, and agents will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, profits, or goodwill, arising out of or related to your use of the Services. Our total liability for any claim relating to the Services will not exceed the greater of the amount you paid us in the twelve months before the claim, or one hundred U.S. dollars ($100).</p>
+      <p>Some jurisdictions do not allow certain limitations, so some of the above may not apply to you.</p>
+    </section>
+
+    <section class="clause" id="indemnity">
+      <h2><span class="num">14.</span>Indemnification</h2>
+      <p>You agree to indemnify and hold harmless [Plasticity LLC] and its officers, employees, and agents from any claims, damages, liabilities, and expenses (including reasonable legal fees) arising out of your use of the Services, your violation of these Terms, or your violation of any rights of a third party.</p>
+    </section>
+
+    <section class="clause" id="changes">
+      <h2><span class="num">15.</span>Changes to the terms</h2>
+      <p>We may update these Terms from time to time. When we do, we will revise the "Last updated" date above and, for material changes, provide a more prominent notice within the app. Your continued use of the Services after an update means you accept the revised Terms.</p>
+    </section>
+
+    <section class="clause" id="law">
+      <h2><span class="num">16.</span>Governing law &amp; disputes</h2>
+      <p>These Terms are governed by the laws of the State of <strong>[STATE]</strong>, without regard to its conflict-of-laws rules. You agree that any dispute arising out of or relating to these Terms or the Services will be resolved in the state or federal courts located in <strong>[County, State]</strong>, and you consent to their jurisdiction.</p>
+      <div class="callout">
+        <p><strong>Review with a lawyer.</strong> Many apps include an arbitration clause and class-action waiver here instead of court jurisdiction. Whether that's right for you is a legal decision — have an attorney advise on this section and the liability caps above.</p>
+      </div>
+    </section>
+
+    <section class="clause" id="contact">
+      <h2><span class="num">17.</span>Contact us</h2>
+      <p>Questions about these Terms? Reach us at:</p>
+      <p>
+        <strong>[Plasticity LLC]</strong><br>
+        [Street Address]<br>
+        [City, State ZIP]<br>
+        Email: <a href="mailto:[support@yourdomain.com]">[support@yourdomain.com]</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p style="margin-bottom:10px;">
+      <a href="index.html" style="margin-right:18px;">Home</a>
+      <a href="/privacy.html" style="margin-right:18px;">Privacy</a>
+      <a href="/terms.html">Terms</a>
+    </p>
+    <p>© <span id="yr"></span> [Plasticity LLC]. LittleWing is a product of [Plasticity LLC]. As an Amazon Associate, LittleWing earns from qualifying purchases.</p>
+  </footer>
+</div>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

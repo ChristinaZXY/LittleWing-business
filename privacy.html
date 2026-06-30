@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" href="appicon.png" />
 <title>Privacy Policy — LittleWing</title>
 <meta name="description" content="How LittleWing collects, uses, and protects your information." />
 
@@ -61,7 +62,7 @@
   header.nav { border-bottom: 1px solid var(--line); background: var(--paper); }
   .nav-inner { width: min(1080px, 92vw); margin-inline: auto; display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
   .brand { display: flex; align-items: center; gap: 11px; font-family: "Bricolage Grotesque"; font-weight: 700; font-size: 1.2rem; letter-spacing: -0.02em; color: var(--ink); text-decoration: none; }
-  .brand svg { width: 28px; height: 28px; }
+  .brand svg, .brand img { width: 28px; height: 28px; border-radius: 23%; object-fit: cover; }
   .back { font-size: 0.92rem; color: var(--ink-soft); text-decoration: none; font-weight: 500; }
   .back:hover { color: var(--ink); }
 
@@ -103,12 +104,7 @@
 <header class="nav">
   <div class="nav-inner">
     <a href="index.html" class="brand">
-      <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
-        <path d="M20 32 C14 28 9 22 8 13 C14 16 18 20 20 26 Z" fill="#ED7A52"/>
-        <path d="M20 32 C16 26 14 19 15 11 C19 16 21 21 21 27 Z" fill="#F2B33D"/>
-        <path d="M20 32 C20 25 21 18 24 11 C25 18 24 24 22 28 Z" fill="#ED7A52"/>
-        <path d="M20 32 C23 26 27 21 32 16 C31 23 27 28 22 31 Z" fill="#8FB0C9"/>
-      </svg>
+      <img src="appicon.png" alt="LittleWing app icon" width="28" height="28" />
       LittleWing
     </a>
     <a href="index.html" class="back">← Back to home</a>
@@ -271,6 +267,11 @@
   </main>
 
   <footer class="foot">
+    <p style="margin-bottom:10px;">
+      <a href="index.html" style="color:var(--ink-soft);text-decoration:none;margin-right:18px;">Home</a>
+      <a href="/privacy.html" style="color:var(--ink-soft);text-decoration:none;margin-right:18px;">Privacy</a>
+      <a href="/terms.html" style="color:var(--ink-soft);text-decoration:none;">Terms</a>
+    </p>
     <p>© <span id="yr"></span> [Plasticity LLC]. LittleWing is a product of [Plasticity LLC]. As an Amazon Associate, LittleWing earns from qualifying purchases.</p>
   </footer>
 </div>
